@@ -29,7 +29,8 @@ public class Goods {
         this.num = num;
     }
 
-    public void show(){
+    public void showGoods(){
+
         System.out.println("货物种类："+label);
         System.out.println("货物数量："+num );
 

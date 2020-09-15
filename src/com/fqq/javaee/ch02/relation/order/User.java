@@ -1,16 +1,16 @@
 package com.fqq.javaee.ch02.relation.order;
 //用户类中有下单的方法（用户姓名和订单号）
-public class User {
+public class User  {
 
     private String name;//用户姓名
-    private String no;//订单号
+    private  Order order;
 
     public User() {
     }
 
-    public User(String name, String no) {
+    public User(String name, Order order) {
         this.name = name;
-        this.no = no;
+        this.order = order;
     }
 
     public String getName() {
@@ -21,14 +21,17 @@ public class User {
         this.name = name;
     }
 
-    public String getNo() {
-        return no;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setNo(String no) {
-        this.no = no;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
-    public void appl
+    public void apply(){
+        System.out.println(this.name +"下单的数量为："+this.order.getNum() );
+        order.showOrder() ;
+    }
 
 }
