@@ -39,6 +39,14 @@ public class Score {
         this.dbScore = dbScore;
     }
 
+    public void Average(){
+        float a = (javaScore + csScore + dbScore )/3;
+        System.out.println("平均成绩："+a);
+    }
 
+    public void sum(){
+        float sum = (javaScore + csScore + dbScore);
+        System.out.println("总成绩："+sum);
+    }
 
 }
